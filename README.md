@@ -8,8 +8,6 @@ where $K_i \sim \text{LogNormal}(\ln k, \sigma)$ represents the component-specif
 
 ## Validation results
 
-![Monte Carlo Validation](validation_pronostia/monte_carlo_validation.png)
-
 Validated against the IEEE PHM 2012 PRONOSTIA dataset: 17 bearings across 3 operating conditions. 5 bearings used for parameter fitting, 14 unseen bearings used for coverage testing. 3 bearings excluded with documented reasons (premature step-failure, atypical early-life spike, truncated record).
 
 | Condition | Predicted 95% CI (cycles) | Bearings within CI |
@@ -25,18 +23,18 @@ All three miscoverage events occurred in the lower tail (premature failures), co
 
 ```
 .
-├── damage_evolution_model.py          Validated power-law damage form
-├── rms_health_indicator.py            Vibration RMS pipeline
-├── validation_pronostia/              IEEE PHM 2012 validation work
-│   ├── validate_pronostia.py          End-to-end validation pipeline
-│   ├── monte_carlo_validation.png     Headline coverage chart
-│   ├── fit_vs_measured_training.png   Training-set fit quality
+├── damage_evolution_model.py          
+├── rms_health_indicator.py           
+├── validation_pronostia/              
+│   ├── validate_pronostia.py          
+│   ├── monte_carlo_validation.png    
+│   ├── fit_vs_measured_training.png   
 │   ├── normalized_damage_trajectories.png
 │   └── all_bearings_trajectories.png
-├── archive/                           Earlier development versions
-│   └── damage_evolution_model_v1.py   Original additive form (deprecated)
-├── VALIDATION.md                      Full validation summary
-└── data/                              (gitignored; see below)
+├── archive/                           
+│   └── damage_evolution_model_v1.py   
+├── VALIDATION.md                     
+└── data/                             
 ```
 
 ## Reproducing the validation
