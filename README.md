@@ -92,4 +92,4 @@ The validated form is in `damage_evolution_model.py`. The earlier v1 form is pre
 
 ## Status
 
-Research-stage code shared for transparency about methodology and validation results. Not production-ready software.
+Research-stage code shared for transparency about methodology and validation results.
